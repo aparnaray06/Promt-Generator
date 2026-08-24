@@ -12,7 +12,7 @@ generateBtn.addEventListener("click", async ()=>{
     prompt.textContent = 'generating your journal prompt...';
 
     try{
-        const response = await fetch('http://localhost:8000/journal-prompt',{
+        const response = await fetch('/journal-prompt',{
             method: "POST",
             headers:{
                 "Content-Type":"application/json"
